@@ -1,0 +1,198 @@
+/* ---------- ROOT COLORS ---------- */
+:root{
+  --primary:#6c63ff;
+  --secondary:#ff6584;
+  --glass:#ffffff30;
+}
+
+/* ---------- BASE ---------- */
+*{
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+}
+
+body{
+  font-family:"Poppins",sans-serif;
+  background:linear-gradient(135deg,#e0f2ff,#ffe6f7);
+  min-height:100vh;
+  line-height:1.7;
+  transition:.4s;
+}
+
+/* ---------- DARK MODE ---------- */
+.dark{
+  background:linear-gradient(135deg,#020617,#111827);
+  color:#f3f4f6;
+}
+
+.dark .content{
+  background:#0b1220c0;
+  border:1px solid #23325b;
+}
+
+/* ---------- HEADER ---------- */
+.header-section{
+  background:linear-gradient(135deg,#6c63ff,#182848);
+  color:white;
+  border-bottom-left-radius:40px;
+  border-bottom-right-radius:40px;
+  box-shadow:0 20px 50px rgba(0,0,0,.4);
+}
+
+/* ---------- GLASS CARD ---------- */
+.content{
+  background:rgba(255,255,255,.6);
+  backdrop-filter:blur(10px);
+  border-radius:20px;
+  padding:20px;
+  box-shadow:0 20px 40px rgba(0,0,0,.1);
+}
+
+/* ---------- NAV LINKS ---------- */
+.nav-link{
+  color:white !important;
+  font-weight:600;
+  transition:.3s;
+}
+
+.nav-link:hover{
+  transform:translateY(-2px);
+  text-decoration:underline;
+}
+
+/* ---------- TABLE ---------- */
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:10px;
+  border-radius:15px;
+  overflow:hidden;
+}
+
+th{
+  background:linear-gradient(135deg,#6c63ff,#182848);
+  color:white;
+  padding:10px;
+}
+
+td{
+  background:white;
+  padding:9px;
+}
+
+tr:hover td{
+  background:#eaf1ff;
+}
+
+.dark table td{
+  background:#0b1730;
+}
+
+/* ---------- DETAILS ---------- */
+details{
+  background:white;
+  padding:12px;
+  border-radius:12px;
+  border:1px solid #ddd;
+  cursor:pointer;
+  box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.dark details{
+  background:#0b1730;
+}
+
+/* ---------- MEDIA ---------- */
+video,audio{
+  width:100%;
+  max-width:480px;
+  border-radius:15px;
+  box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+/* ---------- FORM ---------- */
+form{
+  background:white;
+  padding:15px;
+  border-radius:20px;
+  box-shadow:0 20px 40px rgba(0,0,0,.1);
+}
+
+.dark form{
+  background:#0b1730;
+}
+
+input,textarea,select{
+  width:100%;
+  padding:8px;
+  border-radius:8px;
+  border:1px solid #999;
+}
+
+input:focus,textarea:focus{
+  border-color:#6c63ff;
+  outline:none;
+  box-shadow:0 0 10px #b5b1ff;
+}
+
+/* ---------- BUTTONS ---------- */
+button,input[type=submit]{
+  background:linear-gradient(135deg,#6c63ff,#182848);
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:12px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+button:hover,input[type=submit]:hover{
+  transform:translateY(-2px) scale(1.03);
+  box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+/* ---------- FLOAT BACK TO TOP ---------- */
+#floatTop{
+  position:fixed;
+  right:20px;
+  bottom:25px;
+  padding:10px 16px;
+  border-radius:50px;
+  font-weight:bold;
+  display:none;
+}
+
+/* ---------- SCROLL REVEAL ---------- */
+.reveal{
+  opacity:0;
+  transform:translateY(30px);
+  transition:all .6s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ---------- TOAST MESSAGE ---------- */
+.toast-box{
+  position:fixed;
+  top:20px;
+  right:20px;
+  background:#182848;
+  color:white;
+  padding:12px 25px;
+  border-radius:12px;
+  box-shadow:0 10px 35px rgba(0,0,0,.3);
+  display:none;
+  animation: slide .5s ease;
+}
+
+@keyframes slide{
+  from{transform:translateX(80px);opacity:0;}
+  to{transform:translateX(0);opacity:1;}
+}
+
+
+

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TuteDude – HTML Learning Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap 5 -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  />
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="text-center p-4 shadow-sm header-section">
+  <h1 class="animate-fade">Welcome to TuteDude </h1>
+
+  <p class="lead">
+    A project designed by TuteDude to leaarn HTML
+  </p>
+
+  <P class="lead">Best TuteDude in town since 2021</P>
+
+  <nav class="mt-3">
+   
+    <a href="#about" class="btn btn-primary mx-1">About TD</a>
+      <a href="#menu" class="btn btn-primary mx-1">Course Menu</a>
+      <a href="#trivia" class="btn btn-primary mx-1">Taco Trivia</a>
+      <a href="#feedback Form" class="btn btn-primary mx-1">Feedback Form</a>
+      <a href="#contact Us" class="btn btn-primary mx-1">Contact Us</a>
+  </nav>
+  <figure class="mt-3">
+    <img
+      src="C:\Users\alike\OneDrive\Desktop\Tutedude html\images\1739779901phpxOdKq8_480x360.jpeg"
+      class="img-fluid rounded shadow animate-rise"
+      alt="Learning platform"
+    />
+    <figcaption>TuteDude and a Drink</figcaption>
+  </figure>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main class="container my-4 p-3 rounded shadow bg-white content">
+
+  <!-- ABOUT -->
+  <section id="about" class="mb-4">
+    <h2>About TD</h2>
+
+    <article>
+      <p>
+        <abbr title="TuteDude Learning Platform">TD was founded in 2021.This demo project was created by TuteDude for learning all major HTML tags.
+      </p>
+
+      <blockquote class="blockquote">
+        Level up your career with expert mentorship and interships for FREE.
+      </blockquote>
+    </article>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="mb-4">
+    <h2>Course Menu</h2>
+  <h4>TuteDude Complete Taco Menu</h4>
+
+  <table boarder="1" cellspacing="0" cellpadding="6">
+
+    <tr>
+      <th rowspan="2">Category</th>
+      <th rowspan="2">Type</th>
+      <th colspan="2">Small Portion</th>
+      <th colspan="2">Large Portion</th>
+    </tr>
+
+    <tr>
+      <th>Qty</th>
+      <th>Price</th>
+      <th>Qty</th>
+      <th>Price</th>
+    </tr>
+
+    <!-- TuteDude -->
+    <tr>
+      <td rowspan="3">TuteDude</td>
+      <td>Crunchy (Beef)</td>
+      <td>1</td>
+      <td>$1.50</td>
+      <td>3</td>
+      <td>$3.25</td>
+    </tr>
+
+    <tr>
+      <td>Crunchy (Chicken)</td>
+      <td>1</td>
+      <td>$1.75</td>
+      <td>3</td>
+      <td>$3.50</td>
+    </tr>
+
+    <tr>
+      <td>Crunchy (Veggie)</td>
+      <td>1</td>
+      <td>$1.25</td>
+      <td>3</td>
+      <td>$3.00</td>
+    </tr>
+
+    <!-- Soft -->
+    <tr>
+      <td rowspan="2">Soft TuteDude</td>
+      <td>Soft (Beef)</td>
+      <td>2</td>
+      <td>$3.50</td>
+      <td>4</td>
+      <td>$6.50</td>
+    </tr>
+
+    <tr>
+      <td>Soft (Veggie)</td>
+      <td>2</td>
+      <td>$3.00</td>
+      <td>4</td>
+      <td>$5.50</td>
+    </tr>
+
+    <!-- Combos -->
+    <tr>
+      <td rowspan="2">Combos</td>
+      <td>2 Crunchy + Drink</td>
+      <td colspan="2">$4.50</td>
+      <td colspan="2">N/A</td>
+    </tr>
+
+    <tr>
+      <td>2 Soft + Drink</td>
+      <td colspan="2">$5.00</td>
+      <td colspan="2">N/A</td>
+    </tr>
+
+    <!-- Extras -->
+    <tr>
+      <td rowspan="2">Extras</td>
+      <td>Chips & Salsa</td>
+      <td colspan="4">$2.00</td>
+    </tr>
+
+    <tr>
+      <td>Guacamole</td>
+      <td colspan="4">$1.50</td>
+    </tr>
+
+    <tr>
+      <td colspan="6"><strong>Average Meal Price Range: $2.00 – $6.50</strong></td>
+    </tr>
+  </table>
+
+  <hr>
+     <p><a href="#top">Back to Top</a></p>
+
+  <!-- ================= TRIVIA ================= -->
+  <h2>Taco Trivia</h2>
+
+  <details>
+    <summary>When did TuteDude first appear in the United States?</summary>
+    <p>TuteDude first appeared in the United States in the early 2000s.</p>
+  </details>
+
+  <hr>
+
+  <!-- ================= MEDIA ================= -->
+  <h2>Media Fun</h2>
+
+  <h3>Listen to Taco Music</h3>
+  <audio controls>
+    <source src="taco-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <h3>Watch Taco Video</h3>
+  <video width="400" controls>
+    <source src="taco-video.mp4" type="video/mp4">
+  </video>
+
+  <hr>
+
+  <!-- ================= FEEDBACK ================= -->
+  <h3>Give Us Your Feedback</h3>
+
+  <form>
+
+    <fieldset>
+      <legend>Your Info</legend>
+
+      <label>Name:</label><br>
+      <input type="text" required><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" required><br><br>
+
+      <label>Favorite Taco:</label>
+      <select>
+        <option>Crunchy</option>
+        <option>Soft</option>
+        <option>Veggie</option>
+        <option>Chicken</option>
+        <option>Beef</option>
+      </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Your Message</legend>
+
+      <label>Message:</label><br>
+      <textarea rows="4" cols="40"></textarea>
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <hr>
+
+  <!-- ================= CONTACT ================= -->
+  <h2>Contact Us</h2>
+
+  <address>
+    <strong>TuteDude</strong><br>
+    123 Taco Street<br>
+    Taco Town, TX 75000<br>
+    <a href="mailto:info@tutedude.com">info@tutedude.com</a>
+  </address>
+
+  <p>© 2025 TuteDude. All rights reserved.</p>
+
+</body>
+</html>
